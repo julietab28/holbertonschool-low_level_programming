@@ -3,7 +3,7 @@
 #include <string.h>
 /**
  * _strlen - check the code
- * @s: pointer
+ * @s: string
  * Return: Always 0.
  */
 int _strlen(char *s)
