@@ -11,7 +11,14 @@ void puts2(char *str)
 
 	for (len = 0; str[len] != '\0'; len= len + 2)
 	{
-		_putchar(str[len]);
+		if (len % 2 != 0)
+		{
+			continue;
+		}
+		else
+		{
+			_putchar(str[len]);
+		}
 	}
 	_putchar('\n');
 }
