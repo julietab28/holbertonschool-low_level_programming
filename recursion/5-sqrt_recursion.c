@@ -33,12 +33,12 @@ int _sqrt_new(int n, int x)
 	{
 		return (-1);
 	}
-	else if ((x * x) != n)
+	else if ((x * x) == n)
 	{
-		return (_sqrt_new(n, x++));
+		return (x);
 	}
 	else
 	{
-		return (x);
+		return (_sqrt_new(n, x++));
 	}
 }
