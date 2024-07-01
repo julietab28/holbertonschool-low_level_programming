@@ -1,8 +1,9 @@
 #include "main.h"
-
+int _sqrt_new(int n, int x);
 /**
  * _sqrt_recursion - raiz cuadrada de un num
  * @n: numero
+ * @x: nuemro
  * Return: Always 0.
  */
 
@@ -28,7 +29,11 @@ int _sqrt_recursion(int n)
 int _sqrt_new(int n, int x)
 {
 
-	if ((x * x) != n)
+	if ((x * x) > n)
+	{
+		return (-1);
+	}
+	else if ((x * x) != n)
 	{
 		return (_sqrt_new(n, x++));
 	}
