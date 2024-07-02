@@ -2,11 +2,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/**
+ * create_array - eje1
+ * @size: int
+ * @c: char
+ * Return: Always 0
+*/
 char *create_array(unsigned int size, char c)
 {
-	int x;
-
+	unsigned int x;
 	char *array;
+
 	array = malloc(size * sizeof(char));
 
 	if (size == 0)
@@ -26,3 +32,4 @@ char *create_array(unsigned int size, char c)
 	return (array);
 
 }
+
