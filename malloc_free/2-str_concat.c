@@ -11,7 +11,6 @@
 char *str_concat(char *s1, char *s2)
 {
 	int len1, len2, x, i;
-	int y = 0;
 	char *str_concat;
 
 	if (s1 == NULL)
@@ -48,6 +47,6 @@ char *str_concat(char *s1, char *s2)
 		x++;
 	}
 
-	str_concat[x] = '\0'
+	str_concat[x] = '\0';
 	return (str_concat);
 }
