@@ -41,13 +41,13 @@ char *str_concat(char *s1, char *s2)
 	for (x = 0; x <= len1; x++)
 	{
 		str_concat[x] = s1[x];
-		y++;
 	}
 	for (i = 0; i <= len2; i++)
 	{
-		str_concat[y] = s2[i];
-		y++;
+		str_concat[x] = s2[i];
+		x++;
 	}
 
+	str_concat[x] = '\0'
 	return (str_concat);
 }
