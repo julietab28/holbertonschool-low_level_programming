@@ -31,8 +31,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 
-	_strncpy(nombre, name, len1 + 1);
-	_strncpy(duenio, owner, len2 + 1);
+	_strncpy(nombre, name, len1);
+	_strncpy(duenio, owner, len2);
 	perrito = malloc(sizeof(dog_t));
 	if (perrito == NULL)
 	{
