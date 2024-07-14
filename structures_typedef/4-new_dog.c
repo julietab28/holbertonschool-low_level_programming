@@ -18,23 +18,23 @@ dog_t *new_dog(char *name, float age, char *owner)
 	for (len1 = 0; name[len1] != '\0'; len1++)
 	for (len2 = 0; owner[len2] != '\0'; len2++)
 
-	nombre = malloc(sizeof(len1));
+	nombre = malloc(sizeof(len1 + 1));
 	if (nombre == NULL)
 	{
 		return (NULL);
 	}
 
-	duenio = malloc(sizeof(len2));
+	duenio = malloc(sizeof(len2 + 1));
 	if (duenio == NULL)
 	{
 		free(nombre);
 		return (NULL);
 	}
 
-	_strncpy(nombre, name, len1);
-	nombre[len1] = '\0';
-	_strncpy(duenio, owner, len2);
-	duenio[len2] = '\0';
+	_strncpy(nombre, name, len1 + 1);
+	nombre[len1 - 1] = '\0';
+	_strncpy(duenio, owner, len2 + 1);
+	duenio[len2 - 1] = '\0';
 	perrito = malloc(sizeof(dog_t));
 	if (perrito == NULL)
 	{
