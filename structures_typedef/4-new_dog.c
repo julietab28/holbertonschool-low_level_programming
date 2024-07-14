@@ -41,11 +41,9 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	perrito = malloc(sizeof(char) * (len1 + len2));
 
-	_strncpy(nombre, name, len1);
-	perrito->name = nombre;
+	perrito->name = _strncpy(nombre, name, len1);
 	perrito->age = age;
-	_strncpy(duenio, owner, len2);
-	perrito->owner = duenio;
+	perrito->owner = _strncpy(duenio, owner, len2);
 	return (perrito);
 }
 
