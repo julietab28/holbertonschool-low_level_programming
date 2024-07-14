@@ -31,10 +31,10 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 
-	_strncpy(nombre, name, len1 + 1);
-	nombre[len1] = '\0';
-	_strncpy(duenio, owner, len2 + 1);
-	duenio[len2] = '\0';
+	_strncpy(nombre, name, len1);
+	nombre[len1 - 1] = '\0';
+	_strncpy(duenio, owner, len2);
+	duenio[len2 - 1] = '\0';
 	perrito = malloc(sizeof(dog_t));
 	if (perrito == NULL)
 	{
