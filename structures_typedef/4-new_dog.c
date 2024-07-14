@@ -25,14 +25,14 @@ dog_t *new_dog(char *name, float age, char *owner)
 	for (len1 = 0; name[len1] != '\0'; len1++)
 	for (len2 = 0; owner[len2] != '\0'; len2++)
 
-	nombre = malloc(sizeof(name));
+	nombre = malloc(sizeof(len1));
 	if (nombre == NULL)
 	{
 		free(perrito);
 		return (NULL);
 	}
 
-	duenio = malloc(sizeof(owner));
+	duenio = malloc(sizeof(len2));
 	if (duenio == NULL)
 	{
 		free(perrito);
