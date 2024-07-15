@@ -4,7 +4,8 @@
 /**
  * array_iterator - prints an integer
  * @array: the integer to print
- * @size: size_t
+ * @size: size of array
+ * @action: pointer to a function
  * Return: Nothing.
  */
 void array_iterator(int *array, size_t size, void (*action)(int))
