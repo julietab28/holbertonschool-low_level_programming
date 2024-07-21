@@ -9,11 +9,11 @@ macros that were authorized to usebla bla bla...
 ## Our functions and what they do
 
 * _strlen
-hola hola
+	hola hola
 * algo
-hola 
+	hola 
 * algo
-hola
+	hola
 * algo 
 
 ## Functions and macros provided
