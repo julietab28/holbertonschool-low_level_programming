@@ -3,9 +3,9 @@
 #include "lists.h"
 
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * print_list - Print the elements of a list and return the numebr of nodes.
+ * @h: Pointer to the list
+ * Return: The number of nodes.
  */
 size_t print_list(const list_t *h)
 {
